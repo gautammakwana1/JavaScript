@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>The Calculator is here....</title>
+
+<style>
+#zero{
+    width: 62px;
+}
+input
+{
+    background-color: aqua;
+    width: 20px;
+    height: 25px;
+    margin: 1px;
+    margin-top: 5px;
+    box-sizing: content-box;
+}
+</style>
+</head>
+<body>
+    <form name="Calculator" style="padding-top: 200px; padding-left: 650px;">
+        <input type="text" style="background-color: yellow; width: 153px ;" id = "ans">
+        <div>
+            <input type="button" onclick="SIGN('%')" , value="%">
+            <input type="button" onclick="CLEAR()" , value="C">
+            <input type="button" onclick="BACK()" , value="⌫">
+            <input type="button" style="margin: 2px;" onclick="SIGN('/')" , value="/">
+            <br>
+            <input type="button" onclick="Calc('7')" , value="7">
+            <input type="button" onclick="Calc('8')" , value="8">
+            <input type="button" onclick="Calc('9')" , value="9">
+            <input type="button" style="margin: 2px;" onclick="SIGN('*')", value="x">
+            <br>
+            <input type="button" onclick="Calc('4')" , value="4">
+            <input type="button" onclick="Calc('5')" , value="5">
+            <input type="button" onclick="Calc('6')" , value="6">
+            <input type="button" style="margin: 2px;" onclick="SIGN('-')" , value="-">
+            <br>
+            <input type="button" onclick="Calc('1')" , value="1">
+            <input type="button" onclick="Calc('2')" , value="2">
+            <input type="button" onclick="Calc('3')" , value="3">
+            <input type="button" style="margin: 2px;" onclick="SIGN('+')" , value="+">
+            <br>
+            <input type="button" onclick="Calc('0')" , value="0" , id="zero">
+            <input type="button" onclick="Calc('.')" , value=".">
+            <input type="button" onclick="ANSWER()" , value="=">
+        </div>
+    </form>
+    <script src="Fcalculator.js"></script>
+</body>
+</html>
